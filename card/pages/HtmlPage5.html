@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>游戏桌面</title>
+
+	<link href="../css/csshake.css" rel="stylesheet" />
+	<script src="../js/jquery.danmu.js"></script>
+	<script src="../js/page5.js"></script>
+</head>
+<body>
+	
+	<div id="shareScreen" class="shareScreen none"></div>
+
+	<!-- 游戏结束 -->
+	<div id="gameOver" class="none"></div>
+	<!-- 背景 -->
+	<div class="bg"></div>
+
+	<!-- 剩余张数提示 -->
+	<div class="tips animated fadeInLeft delay">剩余<br /><span>20</span>张</div>
+
+	<!--出牌展示-->
+	<div class="card "></div>
+
+	<!-- 玩家状态条 -->
+	<div class="role player  animated fadeInUp delay">
+		<div class="msg none">此牌一出，场上所有桥场上所有桥场上所有</div>
+		<div class="face">
+			<div class="person shake "></div>
+		</div>
+		<div class="status">
+			<h2>500年<br /><span class="smalltext">所有桥的寿命:</span></h2>
+			<progress max="1000" value="500"></progress>
+		</div>
+	</div>
+
+	<!-- 电脑状态条 -->
+	<div class="role computer animated fadeInDown delay">
+		<div class="msg none">此牌一出，场上所有桥场上所有桥场上所有</div>
+		<div class="face ">
+			<div class="person shake"></div>
+		</div>
+		<div class="status ">
+			<progress max="1000" value="500"></progress>
+			<h2><span class="smalltext">所有桥的寿命:</span><br />500年</h2>
+		</div>
+	</div>
+
+	<!-- 桌面展示卡牌 -->
+	<div class="desktop animated bounceIn delay">
+		<div class="close item "></div>
+		<div class="open item "></div>
+	</div>
+
+	<!-- 电脑发牌区 -->
+	<div class="computer contorl animated bounceIn delay">
+		<div class="card card0"></div>
+		<div class="card card0"></div>
+	</div>
+
+	<!-- 用户发牌区 -->
+	<div class="player contorl animated flipInY delay">
+		<div class="buttons ">
+			<button id="sendButton" class="win-button img" title="出牌"></button>
+			<button id="cancelButton" lock="true" class="win-button img" title="结束出牌"></button>
+		</div>
+		<div class="card">
+			<div class="center">
+				<div class="item animated transition"></div>
+				<div class="item animated transition"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--游戏按钮-->
+	<div class="buttons  none">
+		<button id="helpButton" class="win-button img">玩法介绍</button>
+		<button id="shareButton" class="win-button img">分享好友</button>
+		<button id="leaveButton" class="win-button img">离开游戏</button>
+	</div>
+
+	<!-- 离开提示窗口 -->
+	<div class="window leave none">
+		<h2>离开游戏</h2>
+		<p>你还没有玩完呢！就要离开么？后面还有好多惊喜呢！</p>
+		<div class="buttons">
+			<button id="leaveButton2" class=" win-button img">坚决离开</button>
+			<button id="backButton" class="win-button img">回到游戏</button>
+		</div>
+
+	</div>
+
+	
+	<div class="arrowtips none"></div>
+
+	<!-- 菜单栏 -->
+	<div id="nav" class="nav"></div>
+
+	<!-- hp数字 -->
+    <div class="hp animated none computer"></div>
+	<div class="hp animated none role"></div>
+
+	<!-- 倒计时 -->
+	<div class="clock"><span>9</span></div>
+	<div class="clock computer"><span>1</span></div>
+
+	<!--玩法介绍-->
+	<div class="wf-content none">
+		<div class="content"></div>
+		<button class="win-button img none" id="closeButton">继续游戏</button>
+		<div class="close"></div>
+	</div>
+
+    <div class="lock none"></div>
+	<div id="effect" class="none"></div>
+
+
+	<div class="effect word text21  none">
+    </div>
+</body>
+</html>

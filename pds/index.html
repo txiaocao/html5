@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>秒拍大娃赢头套</title>
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!--<script type="text/javascript">
+            var phoneW =  parseInt(window.innerWidth),phoneScale = phoneW/640,ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)){
+                var version = parseFloat(RegExp.$1);
+                if(version>2.3){
+                    document.write('<meta name="viewport" content="width=640, initial-scale='+phoneScale+', minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+                    //alert('<meta name="viewport" content="width=640, initial-scale='+phoneScale+', minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+                }else{
+                    document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+                }
+            } else {
+                document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        </script>-->
+        <meta name="viewport" content="width=640,user-scalable=no, target-densitydpi=device-dpi">
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="animate.min.css">
+    </head>
+    
+    <body>
+        <div class="none">
+            <img src="300x300.jpg" />
+        </div>
+        <section class="loading">
+            <div class="roundSpinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </section>
+        <!-- 头部功能按钮 -->
+        <header>
+            <!--<a href="javascript:void(0);" ontouchstart='window.location="http://a.app.qq.com/o/simple.jsp?pkgname=com.hoge.android.hz24&g_f=991653"'><div class="leftBtn"></div></a>-->
+            <div class="rightBtn"></div>
+        </header>
+        <!-- 内容区 -->
+        <img id="ewm" class="ewm none" src="ewm.png" />
+        <section class="main">
+            <!-- 广告标语 -->
+            <div class="tipCon">
+                <img src="t1.png?v" alt="">
+                <img src="bay.png?v" alt="" style="opacity: 0;">
+            </div>
+            <div class="mskBox"></div>
+            <div class="step2">
+                <div class="bay">
+                    <img src="bay2.png?v" alt="">
+                </div>
+                <div class="t2">
+                    <img src="t2.png?v" alt="">
+                </div>
+                <div class="scoreImg">
+                    <img src="t3.png?v" alt="">
+                </div>
+                <div class="startBtn">开始游戏</div>
+            </div>
+            <div class="step3">
+                <!-- 照片canvas -->
+                <canvas id='takePhoto'></canvas>
+                <span id='bayRole'></span>
+                <div class="countDown">3</div>
+                <div class="role"></div>
+                <div class="aim">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="takePhotoBtn">
+                    <div class="shine"></div>
+                    <div class="msk mskAm"></div>
+                </div>
+                <div class="screenshot">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <div class="bayMsk">
+                                <div class="sBay"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="bayMsk">
+                                <div class="sBay"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="bayMsk">
+                                <div class="sBay"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gameEnd">
+                    <div class="scoreNum">
+                        <span id="result_score">99.56</span>分</div>
+                    <div class="txt">转发分数到朋友圈，将朋友圈截图发到【火爆游戏】微信公众号，分数超过98分并留下姓名、电话、地址既有机会获得大娃头套一枚。</div>
+                    <div class="againBtn">再来一次</div>
+                </div>
+            </div>
+            <div class="enterGameBtn">进入游戏</div>
+            <div class="bg"></div>
+            <div class="photoBtn"></div>
+            <section class="rulePage">
+                <div class="backBtn">返回</div>
+                <div class="ruleCon" id='ruleCon'>
+                    <div class="rScroller">活动时间：即日起至8月31日
+                        <br />活动规则：
+                        <br />1. 玩法：当大娃接近镜头中心点击
+                        <i class="btncarm"></i>给大娃拍照，大娃越靠近中心分数越高。分数超过98分就有机会获得
+                        <span class="yellow">大娃头套</span>。
+                        <br />2. 领奖：当你的照片分数超过
+                        <span class="yellow">98</span>分，分享到朋友圈并截图发送至
+                        <span class="yellow">【火爆游戏】官方微信（微信号：huobaogame）</span>后并留下姓名、电话、地址，即有机会获得大娃头套一枚，随机抽取哦。
+                        <br />友情提示：
+                        <br />1. 每个账号限领一个；
+                        <br />2. 只限提供完整联系方式的小伙伴（不再另行通知）；
+                        <br />3. 奖品会在8月4日、8月11日、8月18日、8月25日、9月1日分五次寄出；
+                        <br />4. 此次活动最终解释权归火爆游戏所有。
+                        <br />
+                    </div>
+                </div>
+            </section>
+            <div class="copyright">
+                <a href="http://m.huobaoyx.com"><img src="foot.png"></a>
+            </div>
+        </section>
+        <!-- end -->
+        <script src="jquery-2.1.1.sea.min.js"></script>
+        <script src='sea.js'></script>
+        <script src="game.js"></script>
+        <script src="config.js"></script>
+        <script src="common.js"></script>
+        <div style="display:none;">
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                  var hm = document.createElement("script");
+                  hm.src = "//hm.baidu.com/hm.js?aadc3bd550d735fb636f0f20b4da3038";
+                  var s = document.getElementsByTagName("script")[0];
+                  s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script type="text/javascript">
+                var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255887955'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255887955' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+        </div>
+    </body>
+
+</html>

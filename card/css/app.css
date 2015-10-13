@@ -1,0 +1,1249 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	background: #22292c;
+	overflow: hidden;
+}
+
+body {
+	background: #22292c;
+	width: 100%;
+	height: 100%;
+	font-family: 'Microsoft YaHei';
+	margin: 0 auto;
+	vertical-align: middle;
+	position: relative;
+	font-size: 88%;
+	cursor: url("img/cursor.png"), default;
+}
+
+	body.limit {
+		max-width: 320px;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+div.codec {
+}
+
+.none {
+	display: none;
+}
+
+.transition {
+	transition: all 0.1s ease;
+}
+
+.win-button.img {
+	text-indent: -999%;
+	overflow: hidden;
+	font-family: 'Microsoft YaHei';
+	background: transparent no-repeat;
+	background-size: 100% 100%;
+	width: 15%;
+	height: 10%;
+	min-width: 0;
+	outline: none;
+	border: none;
+}
+
+div.shareScreen, div.rotateScreen {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 22;
+	top: 0;
+}
+
+div.shareScreen {
+	background: url("img/shareScreen.png") no-repeat top right rgba(0, 0, 0, 0.8);
+	background-size: 25%;
+}
+
+div.rotateScreen {
+	background: url("img/rotate.png") no-repeat center #22292c;
+	background-size: 90%;
+}
+
+body.pages.page0, body.pages.page1, body.pages.page4, body.pages.page6 {
+	background-color: transparent;
+}
+
+	body.pages.page0 div.bg, body.pages.page1 div.bg, body.pages.page4 div.bg, body.pages.page6 div.bg {
+		width: 100%;
+		height: 100%;
+		background: url("img/bg0.jpg") no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		z-index: -2;
+	}
+
+	body.pages.page6 > div.bg {
+		background: url("img/bg2.jpg") no-repeat;
+		background-size: 100% 100%;
+	}
+
+	body.pages.page2 > .content, body.pages.page4 > .content {
+		position: absolute;
+		left: 10%;
+		top: 10%;
+		width: 80%;
+		height: 80%;
+		background-size: 100% 100%;
+	}
+
+	body.pages.page2 #startButton, body.pages.page4 #startButton {
+		position: absolute;
+		bottom: 1%;
+		right: 1%;
+	}
+
+	body.pages.page0 div.preload {
+		position: absolute;
+		text-align: center;
+		width: 60%;
+		height: 10%;
+		left: 20%;
+		bottom: 20%;
+	}
+
+		body.pages.page0 div.preload div.text {
+			position: relative;
+			height: 20%;
+		}
+
+		body.pages.page0 div.preload progress {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 25%;
+			background: #514731;
+			border: 1px solid #514731;
+		}
+
+			body.pages.page0 div.preload progress::-webkit-progress-bar {
+				background-color: #514731;
+			}
+
+			body.pages.page0 div.preload progress::-webkit-progress-value {
+				background-color: #c71312;
+			}
+
+	body.pages.page1 #startButton {
+		position: absolute;
+		bottom: 18.25%;
+		left: 50%;
+		margin-left: -10.375%;
+		width: 20.75%;
+		height: 10.25%;
+		background-image: url("img/page1startButton.png");
+	}
+
+body.pages.page2 div.bg {
+	position: absolute;
+	background: url("img/bg2.jpg");
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+
+body.pages.page2 > .buttons {
+	position: absolute;
+	width: 60%;
+	bottom: 8%;
+	height: 11%;
+	left: 28%;
+	animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+	animation-duration: 0s;
+}
+
+	body.pages.page2 > .buttons button {
+		height: 100%;
+		width: 40%;
+	}
+
+	body.pages.page2 > .buttons #startButton1 {
+		background-image: url(img/page2startButton1.png);
+	}
+
+	body.pages.page2 > .buttons #startButton2 {
+		background-image: url(img/page2startButton2.png);
+	}
+
+body.pages.page2 div.content {
+	width: 95%;
+	height: 92%;
+	position: absolute;
+	left: 2.5%;
+	top: 5%;
+}
+
+	body.pages.page2 div.content > div {
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		left: 0;
+		top: 0;
+		background: no-repeat;
+		background-size: 100% 100%;
+	}
+
+		body.pages.page2 div.content > div:nth-child(1) {
+			-webkit-animation-delay: 1s;
+			width: 59%;
+			height: 59%;
+			background-image: url("img/page2c1.png");
+		}
+
+		body.pages.page2 div.content > div:nth-child(2) {
+			-webkit-animation-delay: 2s;
+			left: 50%;
+			top: 0;
+			background-image: url("img/page2c2.png");
+		}
+
+		body.pages.page2 div.content > div:nth-child(3) {
+			-webkit-animation-delay: 3s;
+			width: 54%;
+			left: 0;
+			top: 52%;
+			background-image: url("img/page2c3.png");
+			height: 48%;
+		}
+
+		body.pages.page2 div.content > div:nth-child(4) {
+			-webkit-animation-delay: 4s;
+			left: 50%;
+			top: 50%;
+			background-image: url("img/page2c4.png");
+		}
+		body.pages.page2  div.buttons{
+			-webkit-animation-delay: 5s;
+			animation-duration: 1s;
+		}
+
+body.pages.page3 div.bg {
+	position: absolute;
+	background: url("img/bg2.jpg");
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+
+body.pages.page3 > .buttons {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -15%;
+}
+
+body.pages.page4 > div.bg {
+	background: url("img/bg2.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page4 > .content {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("img/page4content.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page4 #startButton {
+	bottom: 9%;
+	right: 6%;
+	width: 17%;
+	background-image: url("img/page4startButton.png");
+}
+
+body.pages.page5 {
+	z-index: -3;
+}
+
+	body.pages.page5 div.nav {
+		background: url("img/nav.png");
+		background-size: 100% 100%;
+		position: absolute;
+		bottom: 1%;
+		right: 1.1%;
+		width: 15%;
+		height: 9%;
+	}
+
+	body.pages.page5 div.hp {
+		position: absolute;
+		left: 25%;
+		top: 20%;
+		font-size: 250%;
+	}
+
+		body.pages.page5 div.hp.role {
+			left: 4%;
+			top: 66%;
+		}
+
+		body.pages.page5 div.hp.computer {
+			left: 83%;
+			top: 10%;
+		}
+
+		body.pages.page5 div.hp.add {
+			color: red;
+		}
+
+		body.pages.page5 div.hp.act {
+			color: #000;
+		}
+
+	body.pages.page5 div.clock {
+		background: url("img/clock.png");
+		background-size: 100% 100%;
+		position: absolute;
+		bottom: 25%;
+		left: 31.1%;
+		width: 5%;
+		height: 8%;
+		display: table;
+		display: none;
+	}
+
+		body.pages.page5 div.clock.computer {
+			bottom: auto;
+			right: auto;
+			left: 60.1%;
+			top: 11%;
+		}
+
+		body.pages.page5 div.clock > span {
+			display: table-cell;
+			font-size: 10px;
+			position: relative;
+			color: #111;
+			text-align: center;
+			vertical-align: middle;
+			height: 100%;
+		}
+
+	body.pages.page5 > div.arrowtips {
+		display: none;
+		position: absolute;
+		left: 67%;
+		top: 57.5%;
+		width: 5%;
+		height: 7%;
+		background: url("img/arrow.png") no-repeat;
+		background-size: 100% 100%;
+		-webkit-animation-name: arrowtips;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-duration: 1s;
+	}
+
+@-webkit-keyframes arrowtips {
+	0% {
+		left: 67%;
+	}
+
+	50% {
+		left: 65%;
+	}
+}
+
+body.pages.page5 > div.lock {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.05) no-repeat 78% 35%;
+	background-size: 10% auto;
+}
+
+	body.pages.page5 > div.lock.think {
+		background-image: url("img/think.gif");
+	}
+
+body.pages.page5 > div.role.player.delay {
+	-webkit-animation-delay: 1s;
+}
+
+body.pages.page5 > div.role.computer.delay {
+	-webkit-animation-delay: 1s;
+}
+
+body.pages.page5 > div.tips.delay {
+	-webkit-animation-delay: 2s;
+}
+
+body.pages.page5 > div.computer.contorl.delay {
+	-webkit-animation-delay: 3s;
+}
+
+body.pages.page5 > div.player.contorl.delay {
+	-webkit-animation-delay: 3s;
+}
+
+body.pages.page5 > div.desktop.delay {
+	-webkit-animation-delay: 4.5s;
+}
+
+body.pages.page5 > .wf-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+	body.pages.page5 > .wf-content div.close {
+		position: absolute;
+		right: 15%;
+		top: 18%;
+		width: 5%;
+		height: 5%;
+		background: url("img/close.png") no-repeat;
+		background-size: 100% 100%;
+	}
+
+	body.pages.page5 > .wf-content .content {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url("img/page4content.png") no-repeat;
+		background-size: 100% 100%;
+	}
+
+	body.pages.page5 > .wf-content #closeButton {
+		position: absolute;
+		bottom: 15%;
+		right: 15%;
+		background-image: url("img/page4startButton.png");
+	}
+
+body.pages.page5 div.effect.word.animation {
+	-webkit-animation-name: wordanimation;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-duration: 14s;
+}
+
+@-webkit-keyframes wordanimation {
+	0% {
+		right: -125%;
+	}
+
+	100% {
+		right: 140%;
+	}
+}
+
+body.pages.page5 div.effect.word {
+	position: absolute;
+	background: no-repeat center bottom;
+	background-size: 100% 100%;
+	width: 121%;
+	height: 23%;
+	bottom: 39%;
+	z-index: 1;
+	right: -125%;
+}
+
+	body.pages.page5 div.effect.word.text21 {
+		background-image: url("img/21.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text22 {
+		background-image: url("img/22.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text23 {
+		background-image: url("img/23.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text24 {
+		background-image: url("img/24.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text25 {
+		background-image: url("img/25.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text26 {
+		background-image: url("img/26.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text27 {
+		background-image: url("img/27.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text28 {
+		background-image: url("img/28.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text29 {
+		background-image: url("img/29.text.png");
+	}
+
+	body.pages.page5 div.effect.word.text30 {
+		background-image: url("img/30.text.png");
+	}
+
+body.pages.page5 > div#effect {
+	position: absolute;
+	background: no-repeat center bottom;
+	width: 80%;
+	height: 80%;
+	left: 10%;
+	top: 10%;
+	background-size: 100% 100%;
+	z-index: 1;
+}
+
+	body.pages.page5 > div#effect.effect21 {
+		background-image: url("img/effect21.gif");
+	}
+
+	body.pages.page5 > div#effect.effect22 {
+		background-image: url("img/effect22.jpg");
+	}
+
+	body.pages.page5 > div#effect.effect23 {
+		background-image: url("img/effect23.jpg");
+	}
+
+	body.pages.page5 > div#effect.effect24 {
+		background-image: url("img/effect24.jpg");
+	}
+
+	body.pages.page5 > div#effect.effect25 {
+		background-image: url("img/effect25.jpg");
+	}
+
+	body.pages.page5 > div#effect.effect26 {
+		background-image: url("img/effect26.jpg");
+	}
+
+	body.pages.page5 > div#effect.effect27 {
+		background-image: url("img/effect27.jpg");
+	}
+
+	body.pages.page5 > div#effect.effect28 {
+		background-image: url("img/effect28.gif");
+	}
+
+	body.pages.page5 > div#effect.effect29 {
+		background-image: url("img/effect29.jpg");
+	}
+
+	body.pages.page5 > div#effect.effect30 {
+		background-image: url("img/effect30.jpg");
+	}
+
+body.pages.page5 > div.xf {
+	background: url("img/e1.gif") no-repeat center;
+	background-size: 100% auto;
+	width: 25%;
+	height: 51%;
+	position: absolute;
+	bottom: 0;
+	left: -3%;
+	z-index: 1;
+}
+
+body.pages.page5 > div#gameOver {
+	position: absolute;
+	z-index: 1;
+	background: #EDEDED;
+	font-size: 120%;
+	text-align: center;
+	padding-top: 20%;
+	width: 100%;
+	height: 65%;
+	top: 0;
+}
+
+body.pages.page5 div#gameOver.player {
+	background: url("img/playerSuccess.png") no-repeat center;
+	background-size: 65% 30%;
+}
+
+body.pages.page5 div#gameOver.computer {
+	background: url("img/computerSuccess.png") no-repeat center;
+	background-size: 65% 30%;
+}
+
+body.pages.page5 div.window {
+	background: url("img/window.png") no-repeat;
+	background-size: 100% 100%;
+	width: 40%;
+	height: 41%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13%;
+	margin-left: -25%;
+	padding: 2% 5%;
+}
+
+	body.pages.page5 div.window h2 {
+		font-size: 110%;
+		text-align: center;
+	}
+
+	body.pages.page5 div.window p {
+		font-size: 80%;
+	}
+
+	body.pages.page5 div.window div.buttons {
+		text-align: center;
+		position: absolute;
+		left: 2%;
+		bottom: 5%;
+		width: 100%;
+	}
+
+		body.pages.page5 div.window div.buttons button {
+			width: 24%;
+		}
+
+body.pages.page5 div.bg {
+	width: 100%;
+	height: 100%;
+	background: url("img/bg.png") no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index: -2;
+}
+
+body.pages.page5 #sendButton {
+	background-image: url("img/btnSend2.png");
+}
+
+	body.pages.page5 #sendButton[lock] {
+		background-image: url("img/btnSend.png");
+	}
+
+body.pages.page5 #cancelButton {
+	display: none;
+	background-image: url("img/btnOver.png");
+}
+
+	body.pages.page5 #cancelButton[lock] {
+		background-image: url("img/btnOver2.png");
+	}
+
+body.pages.page5 #leaveButton {
+	background-image: url("img/btnLeave.png");
+}
+
+body.pages.page5 #helpButton {
+	background-image: url("img/btnHelp.png");
+}
+
+body.pages.page5 #shareButton {
+	background-image: url("img/btnShare.png");
+}
+
+body.pages.page5 #leaveButton2 {
+	background-image: url("img/btnLeave2.png");
+}
+
+body.pages.page5 #backButton {
+	background-image: url("img/btnBack.png");
+}
+
+body.pages.page5 div.desktop {
+	width: 43%;
+	height: 15%;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	margin-left: -11%;
+	z-index: -1;
+}
+
+	body.pages.page5 div.desktop div.item {
+		width: 30%;
+		height: 50%;
+		display: inline-block;
+		background: no-repeat center;
+		background-size: auto 100%;
+	}
+
+	body.pages.page5 div.desktop div.close {
+		background-image: url("img/cardClose.png");
+	}
+
+	body.pages.page5 div.desktop div.open {
+		background-image: url("img/cardOpen.png");
+	}
+
+body.pages.page5 div.tips {
+	position: absolute;
+	left: 2.5%;
+	top: 2.5%;
+	width: 6.5%;
+	height: 12%;
+	background: url("img/bgTips.png");
+	background-size: 100% 100%;
+	text-align: center;
+	color: #fff;
+	padding-top: 1.5%;
+}
+
+body.pages.page5 > div.role {
+	position: absolute;
+	width: 70%;
+	height: 35%;
+}
+
+	body.pages.page5 > div.role div.face {
+		position: absolute;
+		width: 22%;
+		height: 100%;
+		background: #ededed;
+		background: url("img/roleBox.png");
+		background-size: 100% 100%;
+	}
+
+		body.pages.page5 > div.role div.face div.person {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 141%;
+			background: url("img/rolePlayer.png") no-repeat center;
+			background-size: 100% 100%;
+		}
+
+	body.pages.page5 > div.role div.status {
+		position: absolute;
+		width: 78%;
+		top: 0;
+		left: 25%;
+		height: 40%;
+	}
+
+		body.pages.page5 > div.role div.status progress {
+			width: 100%;
+			height: 15%;
+			background: #f1f1f1;
+		}
+
+			body.pages.page5 > div.role div.status progress::-webkit-progress-bar {
+				background-color: #d3d3d3;
+			}
+
+			body.pages.page5 > div.role div.status progress::-webkit-progress-value {
+				background-color: #c71312;
+			}
+
+		body.pages.page5 > div.role div.status h2 {
+			font-size: 120%;
+			color: #c71312;
+			font-weight: normal;
+			position: absolute;
+			bottom: 15%;
+		}
+
+body.pages.page5 > div.player {
+	left: 2.5%;
+	bottom: 2.5%;
+}
+
+	body.pages.page5 > div.player div.msg {
+		position: absolute;
+		left: 16%;
+		top: -71%;
+		background: url("img/speakPlayer.png") no-repeat;
+		background-size: 100% 100%;
+		width: 35%;
+		height: 60%;
+		z-index: 1;
+		font-size: 68%;
+		padding-left: 7%;
+		padding-top: 1.5%;
+		padding-right: 1.5%;
+	}
+
+	body.pages.page5 > div.player div.status {
+		top: auto;
+		bottom: 0;
+	}
+
+		body.pages.page5 > div.player div.status div.person {
+			background: url("img/rolePlayer.png");
+		}
+
+		body.pages.page5 > div.player div.status progress {
+			bottom: 0;
+			position: absolute;
+		}
+
+body.pages.page5 > div.computer {
+	right: 2.5%;
+	top: 2.5%;
+}
+
+	body.pages.page5 > div.computer div.msg {
+		position: absolute;
+		right: 11%;
+		top: 34%;
+		background: url("img/speakComputer.png") no-repeat;
+		background-size: 100% 100%;
+		width: 35%;
+		height: 56%;
+		z-index: 1;
+		font-size: 68%;
+		padding-left: 2%;
+		padding-right: 7%;
+		padding-top: 4.5%;
+	}
+
+	body.pages.page5 > div.computer div.face {
+		position: absolute;
+		right: 0;
+	}
+
+		body.pages.page5 > div.computer div.face div.person {
+			height: 107%;
+			width: 124%;
+			left: -27%;
+			background: url("img/roleComputer.png") no-repeat;
+			background-size: auto 100%;
+		}
+
+	body.pages.page5 > div.computer div.status {
+		position: absolute;
+		right: 0;
+		top: 0;
+		left: auto;
+		width: 78%;
+		right: 25%;
+	}
+
+		body.pages.page5 > div.computer div.status progress {
+			transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		body.pages.page5 > div.computer div.status h2 {
+			font-size: 120%;
+			text-align: right;
+			top: 11%;
+			right: 0;
+		}
+
+body.pages.page5 > div.tips {
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	font-size: 70%;
+}
+
+body.pages.page5 > .buttons {
+	width: 15%;
+	position: absolute;
+	bottom: 12%;
+	right: 1%;
+}
+
+	body.pages.page5 > .buttons button.img {
+		width: 100%;
+		margin-top: 5%;
+	}
+
+body.pages.page5 > .player.contorl {
+	position: absolute;
+	bottom: 4.55%;
+	left: 52%;
+	margin-left: -30%;
+	width: 60%;
+	height: 38%;
+}
+
+	body.pages.page5 > .player.contorl > .buttons {
+		text-align: center;
+		position: absolute;
+		height: 19%;
+		left: 40%;
+		width: 20%;
+	}
+
+		body.pages.page5 > .player.contorl > .buttons button.img {
+			min-height: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	body.pages.page5 > .player.contorl div.card {
+		position: absolute;
+		bottom: 0;
+		height: 80%;
+		width: 100%;
+		background: url("img/bgCard.png") no-repeat;
+		background-size: 100% auto;
+	}
+
+		body.pages.page5 > .player.contorl div.card div.center {
+			position: relative;
+			left: 28.5%;
+			width: 50%;
+			height: 100%;
+		}
+
+		body.pages.page5 > .player.contorl div.card div.item {
+			display: inline-block;
+			width: 37%;
+			height: 90%;
+			margin-right: 1%;
+			background: #ededed;
+			position: relative;
+			top: 5%;
+			background: url("img/card1.png") no-repeat;
+			background-size: 100% 100%;
+		}
+
+			body.pages.page5 > .player.contorl div.card div.item:nth-child(2) {
+				margin-left: 10%;
+			}
+
+			body.pages.page5 > .player.contorl div.card div.item.active {
+				top: 2%;
+			}
+
+body.pages.page5 > .computer.contorl {
+	position: absolute;
+	width: 20%;
+	height: 15%;
+	top: 6%;
+	left: 54.7%;
+	margin-left: -10%;
+	transition: all 2s ease 2s;
+}
+
+	body.pages.page5 > .computer.contorl div.card {
+		display: inline-block;
+		width: 31%;
+		height: 100%;
+		background: url("img/card0.png");
+		background-size: 100% 100%;
+	}
+
+		body.pages.page5 > .computer.contorl div.card:first-child {
+			margin-right: 5%;
+		}
+
+body.pages.page5 > div.card {
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	width: 12%;
+	height: 28%;
+	margin-left: -4%;
+	background-size: 100% 100%;
+	z-index: 0;
+}
+
+body.pages.page5 div.card1 {
+	background-image: url("img/card1.png") !important;
+}
+
+body.pages.page5 div.card2 {
+	background-image: url("img/card2.png") !important;
+}
+
+body.pages.page5 div.card3 {
+	background-image: url("img/card3.png") !important;
+}
+
+body.pages.page5 div.card4 {
+	background-image: url("img/card4.png") !important;
+}
+
+body.pages.page5 div.card5 {
+	background-image: url("img/card5.png") !important;
+}
+
+body.pages.page5 div.card6 {
+	background-image: url("img/card6.png") !important;
+}
+
+body.pages.page5 div.card7 {
+	background-image: url("img/card7.png") !important;
+}
+
+body.pages.page5 div.card8 {
+	background-image: url("img/card8.png") !important;
+}
+
+body.pages.page5 div.card9 {
+	background-image: url("img/card9.png") !important;
+}
+
+body.pages.page5 div.card10 {
+	background-image: url("img/card10.png") !important;
+}
+
+body.pages.page5 div.card11 {
+	background-image: url("img/card11.png") !important;
+}
+
+body.pages.page5 div.card12 {
+	background-image: url("img/card12.png") !important;
+}
+
+body.pages.page5 div.card13 {
+	background-image: url("img/card13.png") !important;
+}
+
+body.pages.page5 div.card14 {
+	background-image: url("img/card14.png") !important;
+}
+
+body.pages.page5 div.card15 {
+	background-image: url("img/card15.png") !important;
+}
+
+body.pages.page5 div.card16 {
+	background-image: url("img/card16.png") !important;
+}
+
+body.pages.page5 div.card17 {
+	background-image: url("img/card17.png") !important;
+}
+
+body.pages.page5 div.card18 {
+	background-image: url("img/card18.png") !important;
+}
+
+body.pages.page5 div.card19 {
+	background-image: url("img/card19.png") !important;
+}
+
+body.pages.page5 div.card20 {
+	background-image: url("img/card20.png") !important;
+}
+
+body.pages.page5 div.card21 {
+	background-image: url("img/card21.png") !important;
+}
+
+body.pages.page5 div.card22 {
+	background-image: url("img/card22.png") !important;
+}
+
+body.pages.page5 div.card23 {
+	background-image: url("img/card23.png") !important;
+}
+
+body.pages.page5 div.card24 {
+	background-image: url("img/card24.png") !important;
+}
+
+body.pages.page5 div.card25 {
+	background-image: url("img/card25.png") !important;
+}
+
+body.pages.page5 div.card26 {
+	background-image: url("img/card26.png") !important;
+}
+
+body.pages.page5 div.card27 {
+	background-image: url("img/card27.png") !important;
+}
+
+body.pages.page5 div.card28 {
+	background-image: url("img/card28.png") !important;
+}
+
+body.pages.page5 div.card29 {
+	background-image: url("img/card29.png") !important;
+}
+
+body.pages.page5 div.card30 {
+	background-image: url("img/card30.png") !important;
+}
+
+body.pages.page6 div.content {
+	position: absolute;
+	left: 6.2%;
+	top: 7.9%;
+	width: 87.6%;
+	height: 84.6%;
+	background: url("img/page6g.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.itema {
+	position: absolute;
+	left: 7.5%;
+	top: 12.3%;
+	width: 56.8%;
+	height: 45.8%;
+	background: url("img/page6a.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.end {
+	position: absolute;
+	left: 71.5%;
+	top: 12.3%;
+	width: 21.5%;
+	height: 61.8%;
+	background: url("img/code2.png") no-repeat #000;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.codea, body.pages.page6 div.codeb {
+	position: absolute;
+	left: 71.5%;
+	top: 12.3%;
+	width: 14.5%;
+	height: 25.8%;
+	background: url("img/code2.a.png") no-repeat #000;
+	background-size: 100% 100%;
+}
+
+	body.pages.page6 div.codea img, body.pages.page6 div.codeb img {
+		width: 100%;
+		height: 100%;
+	}
+
+body.pages.page6 div.codeb {
+	top: 44.0%;
+	background: url("img/code2.b.png") no-repeat #000;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.itema.w1 {
+	background-image: url("img/page6w1.png");
+}
+
+body.pages.page6 div.itema.w2 {
+	background-image: url("img/page6w2.png");
+}
+
+body.pages.page6 div.itema.w3 {
+	background-image: url("img/page6w3.png");
+}
+
+body.pages.page6 div.itema.w4 {
+	background-image: url("img/page6w4.png");
+}
+
+body.pages.page6 div.itemb {
+	position: absolute;
+	left: 7.7%;
+	top: 81.0%;
+	width: 16%;
+	height: 8.9%;
+	background: url("img/page6b.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.itemc {
+	position: absolute;
+	left: 41.6%;
+	top: 81.0%;
+	width: 16%;
+	height: 8.9%;
+	background: url("img/page6c.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.itemd {
+	position: absolute;
+	left: 71.5%;
+	top: 81.0%;
+	width: 16%;
+	height: 8.9%;
+	background: url("img/page6d.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.iteme {
+	position: absolute;
+	left: 72.7%;
+	top: 28%;
+	width: 20.1%;
+	height: 35.6%;
+	background: url("img/page6e.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.itemf {
+	position: absolute;
+	left: 72.5%;
+	top: 12.3%;
+	width: 19.7%;
+	height: 12.9%;
+	background: url("img/page6f.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+body.pages.page6 div.msg {
+	position: absolute;
+	left: 7.3%;
+	top: 60%;
+	width: 56.7%;
+	height: 12%;
+	font-size: 90%;
+}
+
+span.smalltext {
+	font-size: 60%;
+}
+
+@media screen and (orientation:portrait) {
+}
+
+@media screen and (orientation:landscape) {
+}
+
+body.pages.page6 div.code.see {
+	width: 116%;
+	height: 120%;
+	left: -8%;
+	top: -10%;
+	z-index: 2;
+	background: rgba(0,0,0,.8);
+	text-align: center;
+}
+
+	body.pages.page6 div.code.see img {
+		height: 80%;
+		width: auto;
+		margin: 5% auto;
+		box-shadow: 0 0 50px rgb(0, 255, 255);
+		-webkit-animation-name: shineRed;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+@-webkit-keyframes shineRed {
+	from {
+		-webkit-box-shadow: 0 0 5px rgb(0, 255, 255);
+	}
+
+	50% {
+		-webkit-box-shadow: 0 0 150px rgb(0, 255, 255);
+	}
+
+	to {
+		-webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
+	}
+}

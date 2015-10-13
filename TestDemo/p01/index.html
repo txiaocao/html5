@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<style>
+			a.box{
+						display: inline-block;
+						position: absolute;
+						width: 50px;height: 50px;
+						border-radius: 50px;
+						background: deepskyblue;
+					}
+					#box1{
+						top: 10px;
+					}
+					#box2{
+						top: 70px;
+					}
+					body{
+						overflow-x: hidden;
+					}
+		</style>
+	</head>
+	<body>
+		<script>
+			//获取范围内的随机数
+			function random(min,max){ return Math.floor(min+Math.random()*(max-min)); }
+			function getRandomColor(){
+				var arr = [];
+				var red = random(0,255);
+				var blue = random(0,255);
+				var green = random(0,255);
+				arr.push(red,blue,green);
+				var rgb = "rgb("+arr.join(",")+")";
+				return rgb;
+			}
+			
+			var VIEW_WIDTH = window.innerWidth;
+			var BOX_WIDTH = 50;
+			window.addEventListener("resize",function(){
+				VIEW_WIDTH = window.innerWidth;
+				BOX_WIDTH = 50;
+			});
+			
+			var boxobj = (function(color){
+				
+				function boxobj(color){
+					console.log("初始化");
+					var ele = document.createElement("a")
+					ele.classList.add("box");
+					
+					this.color = false;
+					this.box = ele;
+					this.color = color;
+					this.data = {};
+					this.data.speed = 10;
+					this.box.style.left = 0;
+				};
+				boxobj.prototype.get = function(){
+					return this.box;
+				}
+				boxobj.prototype.move =function (){
+					var own = this;
+					// console.log(own.data);
+					if(own.color){
+						own.box.style.background = getRandomColor();
+					}
+					
+					own.box.style.left = parseInt(own.box.style.left) + own.data.speed+"px"	;
+					if(parseInt(own.box.style.left)>(VIEW_WIDTH-BOX_WIDTH)){
+						own.data.speed *= -1;
+						own.box.style.left = (VIEW_WIDTH-BOX_WIDTH)+"px";
+					}
+					if(parseInt(own.box.style.left)<0){
+						own.data.speed *= -1;
+						own.box.style.left = 0+"px";
+					}
+				};
+				boxobj.prototype.start =  function (){
+					var own = this;
+					setInterval(function(){
+						own.move();
+					},(1/60)*1000);
+				};
+				return boxobj;
+			})();
+			
+			
+			for(var i = 0;i<25;i++){
+				
+				var box = new boxobj(i%2);
+				box.box.style.left = 50*i+10+"px";
+				box.data.speed = 5;
+				box.box.style.top = (50*i+10)+"px";
+				document.body.appendChild(box.box);
+				box.start();
+				
+			}
+			// var b1 = new boxobj(false);
+			// b1.data.speed = 1*5;
+			// document.body.appendChild(b1.get());
+			// b1.start();
+			// 
+			// var b2 = new boxobj(true);
+			// b2.data.speed = 2*5;
+			// document.body.appendChild(b2.get());
+			// b2.get().style.top = "70px";
+			// b2.start();
+			// 
+			// var b3 = new boxobj(false);
+			// b3.data.speed = 3*5;
+			// document.body.appendChild(b3.get());
+			// 
+			// b3.box.style.top = "130px";
+			// b3.start();
+			// var b1 = new boxobj(document.getElementById("box1"),false);
+			// b1.start();
+			// b1.box.data.speed = 40;
+			// var b2 = new boxobj(document.getElementById("box2"),true);
+			// b2.box.data.speed = 30;
+			// b2.start();
+			// start();
+			// alert(box.data.speed);
+		</script>
+	</body>
+
+</html>

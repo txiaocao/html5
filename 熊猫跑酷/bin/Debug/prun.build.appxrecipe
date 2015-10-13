@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PC-20120726YXBR</Machine>
+    <WindowsUser>cof</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>10443b68-ccaa-4ef9-b2b9-bcfd79db8eb3</PackageIdentityName>
+    <IntermediateOutputPath>c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\1.js">
+      <PackagePath>1.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\api.js">
+      <PackagePath>api.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\hm.js">
+      <PackagePath>hm.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\js\api.js">
+      <PackagePath>js\api.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\9.gif">
+      <PackagePath>9.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\app.gif">
+      <PackagePath>app.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\hm.gif">
+      <PackagePath>hm.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\index.html">
+      <PackagePath>index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\home\logo200.png">
+      <PackagePath>images\home\logo200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\home\logo_wr_220x100_black.png">
+      <PackagePath>images\home\logo_wr_220x100_black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\SplashScreen.scale-140.png">
+      <PackagePath>images\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\StoreLogo.scale-140.png">
+      <PackagePath>images\StoreLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\SplashScreen.scale-240.png">
+      <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\About_AboutBmp.png">
+      <PackagePath>ui\About_AboutBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_BgBmp.png">
+      <PackagePath>ui\Achieve_BgBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_CloseButton.png">
+      <PackagePath>ui\Achieve_CloseButton.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_EpicEscape.png">
+      <PackagePath>ui\Achieve_EpicEscape.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_EpicEscapeIntro.png">
+      <PackagePath>ui\Achieve_EpicEscapeIntro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_ExpertShooter.png">
+      <PackagePath>ui\Achieve_ExpertShooter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_ExpertShooterIntro.png">
+      <PackagePath>ui\Achieve_ExpertShooterIntro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_KungfuPanda.png">
+      <PackagePath>ui\Achieve_KungfuPanda.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_KungfuPandaIntro.png">
+      <PackagePath>ui\Achieve_KungfuPandaIntro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_Marathon.png">
+      <PackagePath>ui\Achieve_Marathon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_MarathonIntro.png">
+      <PackagePath>ui\Achieve_MarathonIntro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_Millionaire.png">
+      <PackagePath>ui\Achieve_Millionaire.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_MillionaireIntro.png">
+      <PackagePath>ui\Achieve_MillionaireIntro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_PieceOfCake.png">
+      <PackagePath>ui\Achieve_PieceOfCake.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Achieve_PieceOfCakeIntro.png">
+      <PackagePath>ui\Achieve_PieceOfCakeIntro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Board_BoardBmp.png">
+      <PackagePath>ui\Board_BoardBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Enemy_EffBmp.png">
+      <PackagePath>ui\Enemy_EffBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Enemy_MonsterBmp.png">
+      <PackagePath>ui\Enemy_MonsterBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Food_EffectBmp.png">
+      <PackagePath>ui\Food_EffectBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Food_FoodBmp.png">
+      <PackagePath>ui\Food_FoodBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameOver_BtnBambooBmp.png">
+      <PackagePath>ui\GameOver_BtnBambooBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameOver_OverBmp.png">
+      <PackagePath>ui\GameOver_OverBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameRank_RankBmp.png">
+      <PackagePath>ui\GameRank_RankBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_AttackBtn.png">
+      <PackagePath>ui\GameUI_AttackBtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_BtnArea1.png">
+      <PackagePath>ui\GameUI_BtnArea1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_BtnArea2.png">
+      <PackagePath>ui\GameUI_BtnArea2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_FlyBtn.png">
+      <PackagePath>ui\GameUI_FlyBtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_HeaderBmp.png">
+      <PackagePath>ui\GameUI_HeaderBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_ItemShineBmp.png">
+      <PackagePath>ui\GameUI_ItemShineBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_JumpBtn.png">
+      <PackagePath>ui\GameUI_JumpBtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_Num1Bmp.png">
+      <PackagePath>ui\GameUI_Num1Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_Num2Bmp.png">
+      <PackagePath>ui\GameUI_Num2Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_Num3Bmp.png">
+      <PackagePath>ui\GameUI_Num3Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_Panel.png">
+      <PackagePath>ui\GameUI_Panel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_PauseBmp.png">
+      <PackagePath>ui\GameUI_PauseBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\GameUI_SPBmp.png">
+      <PackagePath>ui\GameUI_SPBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_BG1Bmp.png">
+      <PackagePath>ui\Ground_BG1Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_BG1Bmp2.png">
+      <PackagePath>ui\Ground_BG1Bmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_BG2Bmp.png">
+      <PackagePath>ui\Ground_BG2Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_BG2Bmp2.png">
+      <PackagePath>ui\Ground_BG2Bmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_BG3Bmp.png">
+      <PackagePath>ui\Ground_BG3Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_BG3Bmp2.png">
+      <PackagePath>ui\Ground_BG3Bmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_FlowerBmp.png">
+      <PackagePath>ui\Ground_FlowerBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_FlowerBmp2.png">
+      <PackagePath>ui\Ground_FlowerBmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_GrassBmp.png">
+      <PackagePath>ui\Ground_GrassBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_GrassBmp2.png">
+      <PackagePath>ui\Ground_GrassBmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_Tree1Bmp.png">
+      <PackagePath>ui\Ground_Tree1Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_Tree1Bmp2.png">
+      <PackagePath>ui\Ground_Tree1Bmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_Tree2Bmp.png">
+      <PackagePath>ui\Ground_Tree2Bmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Ground_Tree2Bmp2.png">
+      <PackagePath>ui\Ground_Tree2Bmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Help_BtnBackBmp.png">
+      <PackagePath>ui\Help_BtnBackBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Help_HelpBmp1.png">
+      <PackagePath>ui\Help_HelpBmp1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Help_HelpBmp2.png">
+      <PackagePath>ui\Help_HelpBmp2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Panda_FlyEffBmp.png">
+      <PackagePath>ui\Panda_FlyEffBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Panda_PandaBmp.png">
+      <PackagePath>ui\Panda_PandaBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Panda_SpeedEffBmp.png">
+      <PackagePath>ui\Panda_SpeedEffBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Scene_SpdUpBmp.png">
+      <PackagePath>ui\Scene_SpdUpBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Smoke_BoardBmp.png">
+      <PackagePath>ui\Smoke_BoardBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Store_StoreBmp.png">
+      <PackagePath>ui\Store_StoreBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\ui\Welcome_StartBmp.png">
+      <PackagePath>ui\Welcome_StartBmp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\item\1504\06\552205b9a60cc_wx.jpg">
+      <PackagePath>item\1504\06\552205b9a60cc_wx.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\css\ui-themed.css">
+      <PackagePath>css\ui-themed.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\css\ui-themed.theme-dark.css">
+      <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\css\ui-themed.theme-light.css">
+      <PackagePath>css\ui-themed.theme-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\open\sdk.php">
+      <PackagePath>open\sdk.php</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\resource.json">
+      <PackagePath>resource.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\sound\BgSound.mp3">
+      <PackagePath>sound\BgSound.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\sound\DeadSound.wav">
+      <PackagePath>sound\DeadSound.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\sound\DownSound.wav">
+      <PackagePath>sound\DownSound.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\sound\EatSound.wav">
+      <PackagePath>sound\EatSound.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\sound\FlySound.wav">
+      <PackagePath>sound\FlySound.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\sound\JumpSound.wav">
+      <PackagePath>sound\JumpSound.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\xiaok\computer\Documents\Visual Studio 2015\Projects\prun\prun\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

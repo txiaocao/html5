@@ -1,0 +1,1 @@
+document.write('<sc' + 'ript src="http://static.wanh5.com/js/api3rd.js?v=42"></scr' + 'ipt>');

@@ -1,0 +1,67 @@
+body.pages.page6 div.tips{
+	background: url("img/page6_03.png") no-repeat;
+	position: absolute;
+	background-size: 100% 100%;
+	width: 2%;
+	height: 37%;
+	left: 65.5%;
+	top: 23%;
+}
+
+
+body.pages.page6 div.arrow{
+	background: url("img/page6arrow.png") no-repeat;
+	position: absolute;
+	background-size: 100% 100%;
+	width: 3%;
+	height: 4%;
+	left: 68.5%;
+	top: 23%;
+	-webkit-animation-name: arrowtips2;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+}
+
+
+body.pages.page6 div.arrow2{
+	top: 55%;
+}
+@-webkit-keyframes arrowtips2 {
+	from {
+		left: 68.5%;
+	}
+
+	50% {
+		width: 2%;
+		left: 67.5%;
+	}
+
+	to {
+		left: 68.5%;
+	}
+}
+
+body.pages.page6 div.codea{
+	-webkit-animation-delay: 1.5s;
+}
+body.pages.page6 div.codea, body.pages.page6 div.codeb {
+	-webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
+  -webkit-animation-name: shineRed2;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shineRed2 {
+	from {
+		-webkit-box-shadow: 0 0 1px yellow;
+	}
+
+	50% {
+		-webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
+	}
+
+	to {
+		-webkit-box-shadow: 0 0 1px yellow;
+	}
+}

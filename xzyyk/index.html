@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <title>我已到达优衣库的试衣间，女主角在哪里？</title>
+    <link rel="stylesheet" type="text/css" href="css/m.min.css">
+    <script src="http://www.huobaoyx.com/js/api/hb-openapi.js" data-hbid=227 charset="utf-8"></script>
+    <script type="text/javascript">
+    hb.api.navgate();
+    </script>
+    <style>
+    html,body,#container,#share{ 
+    	width: 100%;height: 100%;  margin: 0;
+    }
+    #share{ 
+    	background: #000;
+    }
+    </style>
+</head>
+
+<body>
+	<div class="none">
+		<img src="icon.jpg" />
+	</div>
+
+    <div id="container">
+    </div>
+    <script type="text/javascript">
+    var mebtnopenurl = 'http://www.huobaoyx.com/moregame.jsp';
+    window.shareData = {
+        "imgUrl": "qmxzfzm.png",
+        "timeLineLink": "http://www.huobaoyx.com/moregame.jsp",
+        "tTitle": "寻找优衣库",
+        "tContent": ""
+    };
+
+    function goHome() {
+        window.location.href = mebtnopenurl;
+    }
+
+    function clickMore() {
+        if ((window.location + "").indexOf("zf", 1) > 0) {
+            window.location.href = "http://www.huobaoyx.com/moregame.jsp";
+        } else {
+            goHome();
+        }
+    }
+
+    function dp_share() {
+        document.title = "我在一分钟内一共" + (myData.score) + "次找到了优衣库的试衣间，女主角被惊呆了！";
+        document.getElementById("share").style.display = "";
+        window.shareData.tTitle = document.title;
+    }
+
+    function dp_Ranking() {
+        window.location = mebtnopenurl;
+    }
+
+    function showAd() {}
+
+    function hideAd() {}
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+
+        WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "img_url": window.shareData.imgUrl,
+                "link": window.shareData.timeLineLink,
+                "desc": window.shareData.tContent,
+                "title": window.shareData.tTitle
+            }, onShareComplete);
+        });
+
+        WeixinJSBridge.on('menu:share:timeline', function(argv) {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "img_url": window.shareData.imgUrl,
+                "img_width": "640",
+                "img_height": "640",
+                "link": window.shareData.timeLineLink,
+                "desc": window.shareData.tContent,
+                "title": window.shareData.tTitle
+            }, onShareComplete);
+        });
+    }, false);
+    var myData = {
+        gameid: "qmxzfzm"
+    };
+    window.shareData.timeLineLink = "http://www.huobaoyx.com/moregame.jsp";
+
+    function dp_submitScore(score) {
+        myData.score = parseInt(score);
+        myData.scoreName = "成功寻找" + score + "次优衣库";
+        if (score > 1) {
+            if (confirm("你一共找到优衣库试衣间" + score + "次！女主还是不满意！快喊你的朋友来帮忙！")) {
+                dp_share();
+            }
+        }
+    }
+
+    function onShareComplete(res) {
+        if (localStorage.myuid && myData.score != undefined) {
+            setTimeout(function() {
+                if (confirm("要将成绩提交到微资源游戏排行榜吗？")) {
+                    window.location = "http://games.vdcomm.cn";
+                } else {
+                    document.location.href = mebtnopenurl;
+                }
+            }, 500);
+        } else {
+            document.location.href = mebtnopenurl;
+        }
+    }
+    </script>
+    <div style="display: none;">
+        <script src="http://s95.cnzz.com/z_stat.php?id=1255464729&web_id=1255464729" language="JavaScript"></script>
+    </div>
+</body>
+
+</html>
+<script id="tpl" type="text/html">
+    <div class="grid">
+        <div class="page hide" id="loading">
+            <div class="loading-txt">
+                <%=loading%>
+            </div>
+        </div>
+        <div class="page hide" id="index">
+            <h1><%=title%></h1>
+            <div id="help">
+                <%=help_txt%>
+            </div>
+            <div class="btns">
+                <button data-type="color" class="btn play-btn">
+                    <%=btn_start%>
+                </button>
+                <a href="javascript:void(0);" onclick="clickMore();" class="btn btn-boyaa">
+                    <%=btn_more_game%>
+                </a>
+            </div>
+        </div>
+        <div class="page hide" id="room">
+            <header>
+                <span class="lv">
+                    <%=score%>
+                    <em>
+                        1
+                    </em>
+                </span>
+                <span class="time">
+                </span>
+                <!-- <span class="btn btn-pause">
+                     <%=btn_pause%>
+                 </span>
+                -->
+            </header>
+            <div id="box" class="lv1">
+            </div>
+        </div>
+        <div class="page hide" id="dialog">
+            <div class="inner">
+                <div class="content gameover">
+                    <div class="inner-content">
+                        <h3></h3>
+                        <div class="btn-wrap">
+                            <button class="btn btn-restart" onclick="location.reload()">
+                                <%=btn_reTry%>
+                            </button>
+                            <a href="javascript:void(0);" onclick="clickMore();" class="btn btn-boyaa">
+                                <%=btn_more_game%>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content pause">
+                    <div class="inner-content">
+                        <h3>
+                            <%=game_pause%>
+                        </h3>
+                        <div class="btn-wrap">
+                            <button class="btn btn-resume">
+                                <%=btn_resume%>
+                            </button>
+                            <a href="javascript:void(0);" onclick="clickMore();" class="btn btn-boyaa">
+                                <%=btn_more_game%>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </ins>
+        </div>
+    </div>
+    <div id=share style="display: none">
+        <img width=100% src="share.png" style="position: fixed; z-index: 9999; top: 0; left: 0; display: " ontouchstart="document.getElementById('share').style.display='none';" />
+    </div>
+</script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min3.js"></script>

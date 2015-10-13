@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=640, initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=0;" />
+    <meta charset="utf-8" />
+    <meta content='64' name='hb-id'>
+    <meta content='13131313' name='hb-key'>
+    <script src="http://192.168.56.10:8080/pfAPIServer/static/js/api/hb-openapi.js" charset="UTF-8"></script>
+
+    <title>Back to Candyland</title>
+    <link href="app.css" rel="stylesheet" type="text/css" />
+    <script src="createjs-2014.12.12.min.js"></script>
+    <script src="jelly.js"></script>
+    <style>html,body{background: #fff;}</style>
+</head>
+
+<body>
+    <div id="viewporter">
+        <div id="canvasHolder" style="position: absolute">
+            <canvas id="canvas" width="640" height="960" style="position: absolute"></canvas>
+        </div>
+    </div>
+  
+</body>
+<script>HB_H5Game.menu();</script>
+  <script>
+    HB_H5Game.login
+	(function(token) {
+	        var date = new Date();
+	        var postUrl = "/jssdk/?token=" + token + "&v=" + date.getTime();
+	        HB_H5Game.sendUrl(postUrl, function(result) { 
+	        	console.log("获取到的用户信息");
+	        	console.log(result);
+	        });
+	    }, this);
+    </script>
+</html>

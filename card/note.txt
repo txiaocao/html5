@@ -1,0 +1,5 @@
+CSS className
+shake shake-constant shake-hard
+
+
+document.querySelector(".player progress").value=180

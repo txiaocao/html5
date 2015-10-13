@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="/static/js/createjs.js"></script>
+		<style>
+			html,body{
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+			body>canvas{
+				/*width: 320px;height: 480px;*/
+				/*width: 100%;
+				height: 100%;*/
+				border: 2px solid green;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			var GAME_WIDTH = 320;
+			var GAME_HEIGHT = 480;
+			var BOX_WIDTH = 50;
+			var BOX_HEIGHT = 50;
+			
+			function resize(){
+				var SCREEN_WIDTH = window.innerWidth;
+				var SCREEN_HEIGHT = window.innerHeight;
+			}
+			
+			var boxobj = (function(color){
+				
+				function boxobj(){
+					this.box = new createjs.Shape();
+					this.box.graphics.beginFill("red").drawCircle(0, 0, 50);
+					this.box.x = BOX_WIDTH;
+					this.box.y = BOX_HEIGHT;
+					this.data = {};
+					this.data.speed = 5;
+				};
+				boxobj.prototype.get = function(){
+					return this.box;
+				}
+				boxobj.prototype.move =function (){
+					var own = this;
+					
+					own.box.x= parseInt(own.box.x) + own.data.speed;
+					if(parseInt(own.box.x)>(GAME_WIDTH-BOX_WIDTH)){
+						own.data.speed *= -1;
+						own.box.x = (GAME_WIDTH-BOX_WIDTH);
+					}
+					if(parseInt(own.box.x)<BOX_WIDTH){
+						own.data.speed *= -1;
+						own.box.x = BOX_WIDTH;
+					}
+				};
+				boxobj.prototype.start =  function (){
+					var own = this;
+					setInterval(function(){
+						own.move();
+					},(1/60)*1000);
+				};
+				return boxobj;
+			})();
+			
+			var canvas = document.createElement("canvas");
+			canvas.id = "game";
+			canvas.width = GAME_WIDTH;
+			canvas.height = GAME_HEIGHT;
+			document.body.appendChild(canvas);
+			
+			var stage = new createjs.Stage("game");
+			var circle = new boxobj();
+			stage.addChild(circle.get());
+			circle.start();
+			
+			var circle2 = new boxobj();
+			circle2.box.y = 150;
+			stage.addChild(circle2.get());
+			circle2.data.speed = 10;
+			circle2.start();
+			setInterval(function(){
+				stage.update();
+			},(1/60)*1000);
+		</script>
+	</body>
+
+</html>
